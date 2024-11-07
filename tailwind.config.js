@@ -2,7 +2,6 @@
 module.exports = {
   content: [
     "./*.html", // inclui todos os arquivos HTML
-    "./src/**/*.js", // inclui os arquivos JS dentro da pasta src
   ],
 
   theme: {

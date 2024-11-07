@@ -556,14 +556,6 @@ video {
   display: none;
 }
 
-.visible{
-  visibility: visible;
-}
-
-.collapse{
-  visibility: collapse;
-}
-
 .fixed{
   position: fixed;
 }
@@ -580,56 +572,24 @@ video {
   z-index: 30;
 }
 
-.block{
-  display: block;
-}
-
 .flex{
   display: flex;
-}
-
-.table{
-  display: table;
-}
-
-.contents{
-  display: contents;
 }
 
 .hidden{
   display: none;
 }
 
+.w-\[350px\]{
+  width: 350px;
+}
+
 .w-full{
   width: 100%;
 }
 
-.w-10{
-  width: 2.5rem;
-}
-
-.w-2{
-  width: 0.5rem;
-}
-
-.border-collapse{
-  border-collapse: collapse;
-}
-
-.transform{
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .cursor-pointer{
   cursor: pointer;
-}
-
-.resize{
-  resize: both;
-}
-
-.flex-row{
-  flex-direction: row;
 }
 
 .flex-col{
@@ -658,10 +618,6 @@ video {
 
 .gap-5{
   gap: 1.25rem;
-}
-
-.border{
-  border-width: 1px;
 }
 
 .bg-DP{
@@ -693,11 +649,6 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.px-0{
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
 .font-poppins{
   font-family: Poppins, sans-serif;
 }
@@ -712,8 +663,27 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold{
   font-weight: 700;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.text-DP{
+  --tw-text-opacity: 1;
+  color: rgb(27 74 126 / var(--tw-text-opacity));
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -721,18 +691,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.underline{
-  text-decoration-line: underline;
-}
-
 .shadow-md{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.outline{
-  outline-style: solid;
 }
 
 /*npm run build:css
@@ -762,5 +724,16 @@ video {
   .md\:px-0{
     padding-left: 0px;
     padding-right: 0px;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:w-full{
+    width: 100%;
+  }
+
+  .lg\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
